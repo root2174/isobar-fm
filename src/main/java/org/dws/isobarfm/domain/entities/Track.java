@@ -1,8 +1,10 @@
 package org.dws.isobarfm.domain.entities;
 
+import java.io.Serializable;
+import java.util.Objects;
 import java.util.UUID;
 
-public class Track {
+public class Track implements Serializable {
 	private UUID id;
 	private String name;
 	private String duration;
@@ -23,5 +25,17 @@ public class Track {
 
 	public String getDuration() {
 		return duration;
+	}
+
+	@Override
+	public boolean equals(Object o) {
+		if (this == o) return true;
+		if (!(o instanceof Track track)) return false;
+		return Objects.equals(id, track.id);
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(id);
 	}
 }
