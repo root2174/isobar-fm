@@ -1,0 +1,5 @@
+bands:
+  url: https://dws-recruiting-bands-api.dwsbrazil.io/api
+server:
+  servlet:
+    context-path: /api
