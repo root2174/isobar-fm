@@ -3,3 +3,8 @@ bands:
 server:
   servlet:
     context-path: /api
+spring:
+  data:
+    redis:
+      host: redis
+      port: 6379

@@ -25,7 +25,7 @@ public class BandsGatewayImpl implements BandsGateway {
 		List<Band> bands = new ArrayList<>(
 				bandsClient.getBands()
 				.stream()
-				.filter(band -> band.getName().contains(query.getName())).toList()
+				.filter(band -> band.getName().toLowerCase().contains(query.getName().toLowerCase())).toList()
 		);
 
 		Comparator<Band> bandComparator;

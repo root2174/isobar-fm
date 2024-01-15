@@ -14,12 +14,11 @@ Foi utilizado arquitetura limpa para a construção do projeto, visando a separa
 
 Foi utilizado o Redis para cachear a lista de bandas.
 
-Para executar o projeto, é necessário ter o Redis instalado e rodando na porta padrão (6379) ou utilizar o docker-compose para subir o Redis.
+Para executar o projeto, é necessário ter o docker instalado e rodar o comando: ``docker-compose up --build``
 
 Após isso é só executar o projeto e acessar os endpoints.
 
 ## Coisas que eu gostaria de ter feito, mas não tive tempo
 
 - Testes unitários
-- Dockerfile para o projeto
 - Tornar a resposta do OpenFeign uma classe separada da entidade e mapear os campos necessários. 
